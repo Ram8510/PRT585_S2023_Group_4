@@ -1,0 +1,11 @@
+I have completed the introduction of Blazor App via this link: https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro
+
+The process involves: 
+1. Dowloaded and Installed the .NET 7 ARM64 (Apple Silicon).
+2. Creating and Setting up the Blazor in the terminal --> dotnet new blazorserver -o BlazorApp --no-https -f net7.0
+3. CD forwards to the Blazer folder
+4. Run the app with Dotnet watch
+5. Run through the counter code --> C# can be used inside Blazor instead of the JavaScript
+6. Write <Counter /> inside the Index.razor --> the counter will then appear inside Home which is the index page. the dotnet watch will save the changes and make the counter button appear on the index page.
+7. Custom the increment amount by 10. This process is conducted through the adding of public property with parameter attribute
+8. End of Blazor introduction
