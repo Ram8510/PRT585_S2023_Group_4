@@ -1,0 +1,102 @@
+In the next individual tasks, i have gone through the Blazor App Todo_List. The process is outlined as below:
+1. Create the app with --> dotnet new blazorserver -o TodoList
+2. cd to the folder
+3. Add a new Todo Razor component to the app using the following command: dotnet new razorcomponent -n Todo -o Pages
+4. Open up the Todo.razor and modified the file as the instruction then save the file
+5. in the NavMenu, add the component:
+
+<div class="nav-item px-3">
+    <NavLink class="nav-link" href="todo">
+        <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+    </NavLink>
+</div>
+
+6. Create a new file naming: TodoItem.cs with C# language and add the following code:
+
+public class TodoItem
+{
+    public string? Title { get; set; }
+    public bool IsDone { get; set; }
+}
+
+
+7. Open up Todo.razor: modified the following codes:
+
+@page "/todo"
+
+<PageTitle>Todo</PageTitle>
+
+<h1>Todo</h1>
+
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>@todo.Title</li>
+    }
+</ul>
+
+@code {
+    private List<TodoItem> todos = new();
+}
+
+8. Continue modified the Todo.razor:
+
+@page "/todo"
+
+<PageTitle>Todo</PageTitle>
+
+<h1>Todo</h1>
+
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>@todo.Title</li>
+    }
+</ul>
+
+<input placeholder="Something todo" />
+<button>Add todo</button>
+
+@code {
+    private List<TodoItem> todos = new();
+}
+
+9. Save both files
+10. Obser the changes made in the app.
+11. Finally modified the file as below:
+
+@page "/todo"
+
+<PageTitle>Todo</PageTitle>
+
+<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>
+
+<ul>
+      @foreach (var todo in todos)
+      {
+         <li>
+            <input type="checkbox" @bind="todo.IsDone" />
+            <input @bind="todo.Title" />
+         </li>
+      }
+</ul>
+
+<input placeholder="Something todo" @bind="newTodo" />
+<button @onclick="AddTodo">Add todo</button>
+
+@code {
+    private List<TodoItem> todos = new();
+    private string? newTodo;
+
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem { Title = newTodo });
+            newTodo = string.Empty;
+        }
+    }
+}
+
+12. Save the file and restart the app in the terminal by typing "y"
+13. The app should restart and users can now add to do containers and tick the box if users have done the tasks.
