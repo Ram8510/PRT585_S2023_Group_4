@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aayan/Semester-2-2023/Ram_S360556/Week1/BlazorApp/BlazorApp.csproj",
+      "projectUniqueName": "/Users/aayan/Semester-2-2023/PRT585_S2023_Group_4/Ram_S360556/Week1/BlazorApp/BlazorApp.csproj",
       "projectName": "BlazorApp",
-      "projectPath": "/Users/aayan/Semester-2-2023/Ram_S360556/Week1/BlazorApp/BlazorApp.csproj",
+      "projectPath": "/Users/aayan/Semester-2-2023/PRT585_S2023_Group_4/Ram_S360556/Week1/BlazorApp/BlazorApp.csproj",
       "packagesPath": "/Users/aayan/.nuget/packages/",
-      "outputPath": "/Users/aayan/Semester-2-2023/Ram_S360556/Week1/BlazorApp/obj/",
+      "outputPath": "/Users/aayan/Semester-2-2023/PRT585_S2023_Group_4/Ram_S360556/Week1/BlazorApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/aayan/.nuget/NuGet/NuGet.Config"
