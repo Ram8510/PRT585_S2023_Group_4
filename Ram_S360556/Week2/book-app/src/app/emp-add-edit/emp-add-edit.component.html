@@ -1,0 +1,53 @@
+<div mat-dialog-title>
+    <h1> Book Details</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Book Name</mat-label>
+            <input matInput type="text" placeholder="Pride and Prejudice" formControlName="bookName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Author Name</mat-label>
+            <input matInput type="text" placeholder="Jane Austen" formControlName="authorName">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field apperance ="outline">
+            <mat-label>Version</mat-label>
+            <input matInput type="text" placeholder="First edition" formControlName="version">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Author Email</mat-label>
+            <input matInput type="email" placeholder=" Ex. janeaustin@gmail.com" formControlName="email">
+        </mat-form-field>
+        <mat-form-field apperance ="outline">
+            <mat-label>Date of Publish</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dop">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+    </div>
+    <div class="row">
+        <mat-form-field>
+            <mat-label>Genre</mat-label>
+            <mat-select formControlName="genre">
+              <mat-option *ngFor="let val of genre" [value]="val">{{val}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+           
+
+    </div>
+</div>
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button>Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+</div>
+</form>
