@@ -33,6 +33,9 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 
-# Mac OS files 
+# Mac OS files
+.[DSds]_[Ss]tore
 .DS_Store
 .ds_store
+.DS_store
+.ds_Store
