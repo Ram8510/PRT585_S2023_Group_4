@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\haras\\Desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj": {}
+    "C:\\Users\\haras\\desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\haras\\Desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj": {
+    "C:\\Users\\haras\\desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\haras\\Desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "C:\\Users\\haras\\desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\haras\\Desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "C:\\Users\\haras\\desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\haras\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\haras\\Desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\obj\\",
+        "outputPath": "C:\\Users\\haras\\desktop\\PRT585_S2023_Group_4\\Harashdeep_S360797\\Week_2\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\haras\\AppData\\Roaming\\NuGet\\NuGet.Config"
