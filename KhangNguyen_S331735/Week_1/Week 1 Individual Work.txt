@@ -1,8 +1,0 @@
-The individual work for this week includes setting up the environment ready for the group project: Visual Studio Code, Visual Studio (Community Edition) and Github desktop.
-As the requirement, SQL Express is also needs to be install. However, i am using the MACOs system, therefore SQL express is not a wise approach. Docker and Azure Data Studio is an alternative solution for this issue.
-
-I have Sucessfully setting up the Images and Containers via:  docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Danger@12345n*' -p 1433:1433 --name sql_server -d mcr.microsoft.com/mssql/server:2017-latest
-and also successfully connected to Azure Data Studio.
-
-
-Moreover the practice of Blazer to do will also be uploaded in another files
