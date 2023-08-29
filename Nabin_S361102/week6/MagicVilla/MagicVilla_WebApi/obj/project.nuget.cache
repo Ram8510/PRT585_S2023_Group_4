@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "WmTEvztlEOqCxJqqkjntWPosUBVfpEYEBv3lAEkLq/aMnUyHoHfbK9iY3F7Md7XC5I8eKcbRlLTw5ZaL4Dzqww==",
+  "success": true,
+  "projectFilePath": "C:\\PRT585\\Nabin_S361102\\week6\\MagicVilla\\MagicVilla_WebApi\\MagicVilla_WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nabin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\nabin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\nabin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\nabin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\nabin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\nabin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
