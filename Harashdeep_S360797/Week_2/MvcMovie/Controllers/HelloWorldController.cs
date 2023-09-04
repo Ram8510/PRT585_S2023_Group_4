@@ -3,6 +3,7 @@ using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers;
 
+
 public class HelloWorldController : Controller
 {
     // 
@@ -21,5 +22,11 @@ public class HelloWorldController : Controller
     public int Age()
     {
         return 23; 
+    }
+    public IActionResult Welcome(string name, int numTimes = 1)
+    {
+        ViewData["Message"] = "Hello " + name;
+        ViewData["NumTimes"] = numTimes;
+        return View();
     }
 }
