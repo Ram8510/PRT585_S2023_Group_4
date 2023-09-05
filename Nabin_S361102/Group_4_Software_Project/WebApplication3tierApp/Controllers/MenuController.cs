@@ -1,4 +1,5 @@
 ﻿using _3BusinessLogicLayer.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication3tierApp.Models;
 
@@ -20,35 +21,35 @@ namespace WebApplication3tierApp.Controllers
             _logger = logger;
         }
 
-        [HttpGet("", Name = "GetAllMenus")]
+        [HttpGet("", Name = "GetAllMenus"), AllowAnonymous]
         public async Task<List<MenuDto>> GetAll()
         {
             var result = await _MenuService.GetAll();
             return result.Select(x => x.ToMenuDto()).ToList();
         }
 
-        [HttpGet("{MenuId}", Name = "GetMenu")]
+        [HttpGet("{MenuId}", Name = "GetMenu"), AllowAnonymous]
         public async Task<MenuDto?> Get(int MenuId)
         {
             var result = await _MenuService.GetById(MenuId);
             return result?.ToMenuDto();
         }
 
-        [HttpPost, Route("")]
+        [HttpPost, Route(""), AllowAnonymous]
         public async Task<int> Create([FromBody] MenuDto requestDto)
         {
             var MenuModel = requestDto.ToMenuModel();
             return await _MenuService.CreateMenu(MenuModel);
         }
 
-        [HttpPut, Route("update")]
+        [HttpPut, Route("update"), AllowAnonymous]
         public async Task<IActionResult> Update([FromBody] MenuDto requestDto)
         {
             await _MenuService.UpdateMenu(requestDto.ToMenuModel());
             return Ok();
         }
 
-        [HttpDelete, Route("{MenuId}")]
+        [HttpDelete, Route("{MenuId}"), AllowAnonymous]
         public async Task<IActionResult> Delete(int MenuId)
         {
             await _MenuService.DeleteMenu(MenuId);

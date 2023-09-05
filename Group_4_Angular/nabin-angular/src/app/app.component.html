@@ -1,0 +1,51 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Menu Management</h1>
+
+  <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#menuModal">Create New Menu</button>
+
+  <!-- Create & Update Form Modal -->
+  <div class="modal fade" id="menuModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ formTitle }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" [(ngModel)]="selectedMenu.MenuName" class="form-control" id="name" name="name">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Save</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Data Table -->
+  <table class="table table-hover mt-4">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let menu of menus">
+        <td>{{ menu.MenuId }}</td>
+        <td>{{ menu.MenuName }}</td>
+        <td>
+          <button class="btn btn-warning btn-sm me-2" (click)="showEditMenuForm(menu)" data-bs-toggle="modal" data-bs-target="#menuModal">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="menu.MenuId && deleteMenu(menu.MenuId)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
