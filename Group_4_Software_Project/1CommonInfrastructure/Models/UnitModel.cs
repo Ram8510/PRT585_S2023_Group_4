@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace _1CommonInfrastructure.Models
 {
-    public class StudentModel
+    public class UnitModel
     {
-        public int StudentId { get; set; } // int
-        public string StudentName { get; set; } // nvarchar(400)
-
+        public int UnitId { get; set; } // int
+        public string UnitCode { get; set; } // nvarchar(400)
+        public string UnitName { get; set; } // nvarchar(400)
     }
-
 }
+    

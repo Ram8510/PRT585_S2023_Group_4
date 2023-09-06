@@ -1,4 +1,4 @@
-﻿using _1CommonInfrastructure.Models;
+﻿/*using _1CommonInfrastructure.Models;
 using _2DataAccessLayer.Context.Models;
 using System;
 using System.Collections.Generic;
@@ -35,3 +35,4 @@ namespace _2DataAccessLayer.Maps
         }
     }
 }
+*/
