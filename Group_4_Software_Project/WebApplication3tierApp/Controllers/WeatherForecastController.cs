@@ -10,6 +10,7 @@ namespace WebApplication3tierApp.Controllers
     [Route("[controller]")]
     [ApiController]
     [Produces("application/json")]
+    [AllowAnonymous]
     public class WeatherForecastController : BaseController
     {
         private static readonly string[] Summaries = new[]
