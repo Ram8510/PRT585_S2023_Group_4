@@ -1,1 +1,7 @@
+Works have been done for week 6:
+
+  1. Research 2 IT-related roles: including their skills, tools, laerning path with specific milestones and add them together in TEAMS
+  2. Clone the 3tierapp in the local machine, setting up the connection and application
+  3. Work on the API followed by the tutorials.
+
 
