@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MovieCreateEditComponent } from './movie-create-edit/movie-create-edit.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { MovieCreateEditComponent } from './movie-create-edit/movie-create-edit.
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
