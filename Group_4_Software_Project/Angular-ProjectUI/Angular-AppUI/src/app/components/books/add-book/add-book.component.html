@@ -1,82 +1,77 @@
-<div class = "container my-5">
-    <h1 class ="mb-3">Add New Book</h1>
+<div class="container my-5">
+    <h1 class="mb-3">Add New Book</h1>
 
     <div class="row">
         <div class="col-6">
             <form #form="ngForm" (ngSubmit)="addBook()">
-                <div class="mb-3">
-                  <label for="title" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="title"
-                  name="title" [(ngModel)]="addBookRequest.title">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" name="title" [(ngModel)]="addBookRequest.title">
+                    </div>
 
-                </div>
-    
-                <div class="mb-3">
-                  <label for="author" class="form-label">Author</label>
-                  <input type="text" class="form-control" id="author"
-                  name="author" [(ngModel)]="addBookRequest.author">
-
+                    <div class="col-md-6 mb-3">
+                        <label for="author" class="form-label">Author</label>
+                        <input type="text" class="form-control" id="author" name="author" [(ngModel)]="addBookRequest.author">
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="publisher" class="form-label">Publisher</label>
-                    <input type="text" class="form-control" id="publisher"
-                    name="publisher" [(ngModel)]="addBookRequest.publisher">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="publisher" class="form-label">Publisher</label>
+                        <input type="text" class="form-control" id="publisher" name="publisher" [(ngModel)]="addBookRequest.publisher">
+                    </div>
 
+                    <div class="col-md-6 mb-3">
+                        <label for="genre" class="form-label">Genre</label>
+                        <select class="form-select" id="genre" name="genre" [(ngModel)]="addBookRequest.genre">
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Love Story">Love Story</option>
+                            
+                        </select>
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="genre" class="form-label">Genre</label>
-                    <input type="text" class="form-control" id="genre"
-                    name="genre" [(ngModel)]="addBookRequest.genre">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="language" class="form-label">Language</label>
+                        <input type="text" class="form-control" id="language" name="language" [(ngModel)]="addBookRequest.language">
+                    </div>
 
+                    <div class="col-md-6 mb-3">
+                        <label for="edition" class="form-label">Edition</label>
+                        <select class="form-select" id="edition" name="edition" [(ngModel)]="addBookRequest.edition">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            
+                        </select>
+                    </div>
+                    
                 </div>
 
-                <div class="mb-3">
-                    <label for="author_Email" class="form-label">Author_Email</label>
-                    <input type="email" class="form-control" id="author_Email"
-                    name="author_Email" [(ngModel)]="addBookRequest.author_Email">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="author_Email" class="form-label">Author Email</label>
+                        <input type="email" class="form-control" id="author_Email" name="author_Email" [(ngModel)]="addBookRequest.author_Email">
+                    </div>
 
-                </div>
-
-                <div class="mb-3">
-                    <label for="published_Year" class="form-label">Published_Year</label>
-                    <input type="number" class="form-control" id="published_Year"
-                    name="published_Year" [(ngModel)]="addBookRequest.published_Year">
-
-                </div>
-
-                <div class="mb-3">
-                    <label for="edition" class="form-label">Edition</label>
-                    <input type="number" class="form-control" id="edition"
-                    name="edition" [(ngModel)]="addBookRequest.edition">
-
-                </div>
-
-                <div class="mb-3">
-                    <label for="language" class="form-label">Language</label>
-                    <input type="text" class="form-control" id="language"
-                    name="language" [(ngModel)]="addBookRequest.language">
-
+                    <div class="col-md-6 mb-3">
+                        <label for="published_Year" class="form-label">Published Year</label>
+                        <input type="number" class="form-control" id="published_Year" name="published_Year" [(ngModel)]="addBookRequest.published_Year">
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="price" class="form-label">Price</label>
-                    <input type="number" class="form-control" id="number"
-                    name="price" [(ngModel)]="addBookRequest.price">
-
+                    <input type="number" class="form-control" id="price" name="price" [(ngModel)]="addBookRequest.price">
                 </div>
 
-                
-
-
-
-
                 <button type="submit" class="btn btn-primary">Submit</button>
-        
-        </form>
-    
+            </form>
         </div>
     </div>
-    
 </div>
