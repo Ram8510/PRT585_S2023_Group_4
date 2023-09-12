@@ -12,13 +12,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <form (ngSubmit)="onSubmit()">
+          <form [formGroup]="menuForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" [(ngModel)]="selectedMenu.MenuName" class="form-control" id="name" name="name">
+              <input type="text" placeholder="1-100 " class="form-control" id="name" formControlName="MenuName">
+              <div *ngIf="menuForm.get('MenuName')?.invalid && menuForm.get('MenuName')?.touched">
+                <small class="text-danger">
+                  Name must be between 1 and 100 characters
+                </small>
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-success">Save</button>
+              <button type="submit" class="btn btn-success" [disabled]="menuForm.invalid">Save</button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
           </form>
@@ -26,7 +31,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Data Table -->
   <table class="table table-hover mt-4">
@@ -42,7 +46,8 @@
         <td>{{ menu.MenuId }}</td>
         <td>{{ menu.MenuName }}</td>
         <td>
-          <button class="btn btn-warning btn-sm me-2" (click)="showEditMenuForm(menu)" data-bs-toggle="modal" data-bs-target="#menuModal">Edit</button>
+          <button class="btn btn-warning btn-sm me-2" (click)="showEditMenuForm(menu)" data-bs-toggle="modal"
+            data-bs-target="#menuModal">Edit</button>
           <button class="btn btn-danger btn-sm" (click)="menu.MenuId && deleteMenu(menu.MenuId)">Delete</button>
         </td>
       </tr>
