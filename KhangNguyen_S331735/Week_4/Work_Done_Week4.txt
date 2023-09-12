@@ -1,0 +1,261 @@
+The Works have been done in week 4 including:
+  1. Defining and write some notes on key elements regarding the DB, SQL (Please check the personal note in TEAMS - Khang Nguyen)
+  2. Practicing and commiting the practice in Angular with themes and so on. 
+
+Below is the note in week 4 (copy version from TEAMS):
+
+Some key concepts in SQL  
+
+ 
+
+1. Database (DB) 
+
+   - A structured collection of data that can be easily accessed, managed, and updated. Databases can range from simple collections like a contact list to complex ones powering large applications or websites. 
+
+  
+
+2. Database Management System (DBMS) 
+
+   - Software designed to manage databases. It provides functionalities for data retrieval, storage, update, and deletion. Examples include Oracle, MySQL, PostgreSQL, and SQL Server. 
+
+  
+
+3. Table 
+
+   - A set of data elements organized using a model of vertical columns (attributes) and horizontal rows (records). It's a primary unit of data storage in a relational database. 
+
+  
+
+4. Schema 
+
+   - The blueprint of a database that defines its structure, including tables, columns, relationships, and constraints. 
+
+  
+
+5. Query 
+
+   - A request to retrieve or manipulate data in a database. In SQL databases, queries are written in Structured Query Language (SQL). 
+
+  
+
+6. Primary Key 
+
+   - A unique identifier for a record in a table. No two rows can have the same primary key value. 
+
+  
+
+7. Foreign Key 
+
+   - An attribute or set of attributes in one table that matches the primary key of another table. It's used to establish and enforce a link between two tables. 
+
+  
+
+8. Index 
+
+   - A data structure that improves the speed of data retrieval operations on a table. It works similarly to an index in a book. 
+
+  
+
+9. Normalization 
+
+   - The process of organizing data in a database to reduce redundancy and improve data integrity. 
+
+  
+
+10. Denormalization 
+
+   - The intentional addition of redundancy to a database to improve performance of certain read-heavy operations. 
+
+  
+
+11. Transaction 
+
+   - A sequence of one or more SQL operations executed as a single unit. Transactions ensure data integrity. They follow the ACID properties (Atomicity, Consistency, Isolation, Durability). 
+
+ 
+
+12. View 
+
+   - A virtual table based on the result of an SQL statement. It provides a way to look at specific parts of data in one or more tables. 
+
+  
+
+13. Stored Procedure 
+
+   - A precompiled collection of SQL statements stored in the database. It can be executed whenever it's called upon. 
+
+  
+
+14. Trigger 
+
+   - A set of instructions that are automatically executed (or triggered) in response to specific events in a database, such as the modification of data in a table. 
+
+  
+
+15. Relational Database Management System (RDBMS) 
+
+   - A type of DBMS based on the relational model, where data is stored in tables with relationships between them. Examples include Oracle, MySQL, and PostgreSQL. 
+
+  
+
+16. NoSQL Database 
+
+   - A non-relational database that can store and retrieve data not necessarily in tabular form. Types include document-based, key-value stores, graph databases, and column stores. Examples are MongoDB, Redis, and Cassandra. 
+
+  
+
+17. Entity-Relationship (ER) Diagram 
+
+   - A graphical representation of the logical structure of a database. It shows the relationships between entities (tables). 
+
+  
+
+18. Concurrency Control 
+
+   - Techniques used by DBMSs to ensure multiple transactions can occur concurrently without causing data inconsistency. 
+
+  
+
+19. Data Warehousing 
+
+   - A large, centralized database that focuses on storing and managing vast amounts of data from various sources for business intelligence and reporting purposes. 
+
+  
+
+20. Data Mining 
+
+   - The process of discovering patterns, correlations, and insights from large sets of data stored in databases. 
+
+  
+
+Each of these elements plays a crucial role in the creation, management, and optimization of databases. The specific importance and implementation of each can vary based on the type of database and its use case. 
+
+ 
+
+ 
+
+ 
+
+Temporal Table 
+
+ 
+
+A temporal table, also known as a system-versioned temporal table, is a new feature introduced in SQL Server 2016 (and in some other database systems). It allows for automatic tracking of the entire history of data changes. With temporal tables, you can easily retrieve the state of data at any point in time, which makes them particularly useful for data auditing, analyzing trends over time, or recovering from accidental data modifications. Here are the main components and features of temporal tables: Current Table, History Table, Period Columns, Querying Over Time, Schema Modifications, Retention Policy, and Temporal Consistency. 
+
+ 
+
+ 
+
+Disaster Recovery 
+
+ 
+
+Disaster recovery (DR) in the context of databases refers to the strategies, tools, and procedures used to recover and protect a database system in the event of a disaster. The primary goal of disaster recovery is to minimize the downtime and data loss caused by unforeseen events such as natural calamities, hardware failures, software bugs, human errors, or cyber-attacks. Here are some key elements and considerations associated with disaster recovery in databases: 
+
+ 
+
+Backup and Restore: 
+
+ 
+
+Backup: Regularly save copies of data to protect against data loss. Backups can be full, differential, or incremental. 
+
+ 
+
+Restore: Revert the database to a previous state using a backup. The time it takes to restore can vary depending on the backup method and size of the data. 
+
+ 
+
+Redundancy: 
+
+ 
+
+Failover Clusters: Use multiple servers or nodes, where if one fails, another can take over to minimize downtime. 
+
+ 
+
+Database Mirroring/Replication: Maintain copies of the database on separate servers. If the primary server fails, the secondary server can be promoted to serve requests. 
+
+ 
+
+Recovery Point Objective (RPO): Defines the maximum amount of data that can be lost in the event of a disaster. For example, an RPO of 1 hour means you could lose up to 1 hour's worth of data. 
+
+ 
+
+Recovery Time Objective (RTO): Defines the maximum amount of time it can take to restore the system after a disaster. For instance, an RTO of 4 hours means you aim to have the system up and running within 4 hours of the disaster. 
+
+ 
+
+Data Center Strategies: 
+
+ 
+
+Hot Site: A duplicate of the primary site of the organization, with full computer systems as well as near-complete backups of user data. 
+
+ 
+
+Warm Site: Partially equipped office spaces that are networked and ready to be equipped in case of a disaster. Faster to set up than a cold site but slower than a hot site. 
+
+ 
+
+Cold Site: Locations with the necessary electrical and physical components of a computer system, but without the actual computers. 
+
+ 
+
+Testing and Drills: Regularly test the disaster recovery plan to ensure it works effectively. This includes simulating disasters and trying to recover from them to check the feasibility and efficiency of the DR plan. 
+
+ 
+
+Documentation: Maintain a detailed DR plan document that outlines all procedures to be followed in the event of a disaster. This document should be easily accessible and known to relevant personnel. 
+
+ 
+
+Monitoring and Alerts: Use monitoring tools to detect failures and anomalies and set up alerts to notify administrators immediately when something goes awry. 
+
+ 
+
+Cloud Solutions: Some companies leverage cloud providers for disaster recovery. Cloud solutions can be especially useful for quickly provisioning resources in the event of a disaster. 
+
+ 
+
+Point-in-Time Recovery: For some databases, it's possible to recover data up to a specific point in time. This can be useful when a problem (like data corruption) is detected, and you want to revert the database to a state just before the issue occurred 
+
+ 
+
+ 
+
+Security in DB 
+
+ 
+
+Database security refers to the various measures, protocols, and tools designed to protect a database from unauthorized access, threats, and attacks. It encompasses a wide range of security controls to ensure the integrity, confidentiality, and availability of data stored in databases. Here are some key aspects of security in databases: Authentication and Authorization, Access Control, Encryption, Auditing, Data Masking, Backup and Recovery, Network Security, Patch Management, SQL Injection Prevention, Physical Security, Database Activity Monitoring (DAM), Data Redaction, Configuration Management. 
+
+ 
+
+ 
+
+What is PolyBase? 
+
+ 
+
+PolyBase is a technology introduced in Microsoft SQL Server 2016 that allows you to query relational and non-relational databases (like Hadoop or Azure Blob Storage) from SQL Server using T-SQL (Transact-SQL). Essentially, PolyBase bridges the gap between SQL Server and external data sources, making it easier to combine and query data from various sources without needing to move or copy the data first. 
+
+ 
+
+Here are some key points about PolyBase: 
+
+Unified Querying: Using PolyBase, you can write T-SQL queries in SQL Server to access external data, without needing to learn a different query language or use a different tool. 
+
+Data Virtualization: Instead of importing and storing external data in SQL Server, you can use PolyBase to virtually access the external data. This means you're querying the data where it resides. 
+
+Data Integration: If you do want to move the data, you can use PolyBase to import external data into SQL Server tables or into Azure SQL Data Warehouse. 
+
+Supported External Data Sources: As of my last update in 2021, PolyBase supports various data sources like Hadoop (HDFS), Azure Blob Storage, Azure Data Lake Store, and others. The list might have expanded since then. 
+
+PolyBase Scale-out Groups: For improved query performance, PolyBase features a scale-out option. This allows you to create a group of SQL Server instances to process large sets of data in parallel. 
+
+ODBC Connectivity: In later versions, SQL Server added the ability to connect to any ODBC data source using PolyBase. 
+
+Security: PolyBase provides secure authentication and data encryption mechanisms to ensure data security during transmission. 
+
+ 

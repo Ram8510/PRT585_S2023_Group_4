@@ -1,4 +1,4 @@
-﻿using _1CommonInfrastructure.Models;
+﻿/*using _1CommonInfrastructure.Models;
 
 namespace WebApplication3tierApp.Models
 {
@@ -28,3 +28,4 @@ namespace WebApplication3tierApp.Models
         }
     }
 }
+*/

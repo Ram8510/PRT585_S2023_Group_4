@@ -28,8 +28,8 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
-   .AddNegotiate();
+/*builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
+   .AddNegotiate();*/
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson(options =>

@@ -1,4 +1,4 @@
-﻿using _1CommonInfrastructure.Models;
+﻿/*using _1CommonInfrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,3 +17,4 @@ namespace _3BusinessLogicLayer.Interfaces
         Task DeleteMenu(int Menu);
     }
 }
+*/

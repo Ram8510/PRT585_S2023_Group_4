@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Group_4_Angular",
+    "\\Harashdeep_S360797",
+    "\\Harashdeep_S360797\\Week_2",
+    "\\Harashdeep_S360797\\Week_2\\MvcMovie\\Controllers",
+    "\\Harashdeep_S360797\\Week_3",
+    "\\Harashdeep_S360797\\Week_3\\TodoApi",
+    "\\Harashdeep_S360797\\Week_3\\TodoApi\\Controllers"
   ],
-  "SelectedNode": "\\mvc movies.sln",
+  "SelectedNode": "\\Harashdeep_S360797\\Week_3\\TodoApi\\Controllers",
   "PreviewInSolutionExplorer": false
 }

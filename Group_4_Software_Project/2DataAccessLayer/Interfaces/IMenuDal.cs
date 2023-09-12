@@ -1,4 +1,4 @@
-﻿using _1CommonInfrastructure.Models;
+﻿/*using _1CommonInfrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,3 +19,4 @@ namespace _2DataAccessLayer.Interfaces
         void DeleteMenu(int MenuId);
     }
 }
+*/
