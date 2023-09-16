@@ -1,0 +1,26 @@
+<div class="container my-5">
+    <h1 class="mb-3">Borrowers</h1>
+
+    <table class="table" *ngIf="borrows && borrows.length >0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Borrower</th>
+                <th>Borrowed Book</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let borrow of borrows">
+                <td>{{ borrow.BorrowId }}</td>
+                <td>{{ borrow.BorrowName }}</td>
+                <td>{{ borrow.BorrowBook }}</td>
+                <td><a [routerLink]="['/borrows', 'edit', borrow.BorrowId]">View</a></td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    <p *ngIf="!borrows || borrows.length <= 0">No Borrowers were found</p>
+</div>
+

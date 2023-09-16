@@ -1,0 +1,30 @@
+<div class="container" my-5>
+    <h1 class="mb-3"> Edit Songs</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateSong()" >
+                <div class="mb-3">
+                    <label for="SongId" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="SongId" name="SongId" readonly [(ngModel)] = "songDetails.SongId" >
+                  </div>
+                <div class="mb-3">
+                  <label for="SongName" class="form-label">Song Name</label>
+                  <input type="text" class="form-control" id="SongName" name="SongName" [(ngModel)] = "songDetails.SongName" >
+                </div>
+                <div class="mb-3">
+                    <label for="SongAuthor" class="form-label">Song Author</label>
+                    <input type="text" class="form-control" id="SongAuthor" name="SongAuthor" [(ngModel)]="songDetails.SongAuthor" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary m-2"> Save </button>
+                <button type="button" class="btn btn-danger" (click)="deleteSong(songDetails.SongId)"> Delete </button>
+            </form>
+
+        </div>
+    </div>
+
+    
+
+
+</div>

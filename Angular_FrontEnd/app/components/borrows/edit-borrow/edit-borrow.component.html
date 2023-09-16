@@ -1,0 +1,30 @@
+<div class="container" my-5>
+    <h1 class="mb-3"> Edit Borrower</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateBorrow()" >
+                <div class="mb-3">
+                    <label for="BorrowId" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="BorrowId" name="BorrowId" readonly [(ngModel)] = "borrowDetails.BorrowId" >
+                  </div>
+                <div class="mb-3">
+                  <label for="BorrowName" class="form-label">Book</label>
+                  <input type="text" class="form-control" id="BorrowName" name="BorrowName" [(ngModel)] = "borrowDetails.BorrowName" >
+                </div>
+                <div class="mb-3">
+                    <label for="BorrowBook" class="form-label">Borrowed Book</label>
+                    <input type="text" class="form-control" id="BorrowBook" name="BorrowBook" [(ngModel)]="borrowDetails.BorrowBook" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary m-2"> Save </button>
+                <button type="button" class="btn btn-danger" (click)="deleteBorrow(borrowDetails.BorrowId)"> Delete </button>
+            </form>
+
+        </div>
+    </div>
+
+    
+
+
+</div>

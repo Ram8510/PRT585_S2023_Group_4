@@ -1,0 +1,25 @@
+<div class="container" my-5>
+    <h1 class="mb-3"> Add New Building</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm"  (ngSubmit)="addBuilding()">
+                <div class="mb-3">
+                  <label for="BuildingName" class="form-label">Building</label>
+                  <input type="text" class="form-control" id="BuildingName" name="BuildingName" [(ngModel)] = "addBuildingRequest.BuildingName" >
+                </div>
+                <div class="mb-3">
+                    <label for="BuildingStatus" class="form-label">Department</label>
+                    <input type="text" class="form-control" id="BuildingStatus" name="BuildingStatus" [(ngModel)]="addBuildingRequest.BuildingDepartment" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary"> Save </button>
+            </form>
+
+        </div>
+    </div>
+
+    
+
+
+</div>

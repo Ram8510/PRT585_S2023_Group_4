@@ -1,0 +1,30 @@
+<div class="container" my-5>
+    <h1 class="mb-3"> Edit Building</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateBuilding()" >
+                <div class="mb-3">
+                    <label for="BuildingId" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="BuildingId" name="BuildingId" readonly [(ngModel)] = "buildingDetails.BuildingId" >
+                  </div>
+                <div class="mb-3">
+                  <label for="BuildingName" class="form-label">Building</label>
+                  <input type="text" class="form-control" id="BuildingName" name="BuildingName" [(ngModel)] = "buildingDetails.BuildingName" >
+                </div>
+                <div class="mb-3">
+                    <label for="BuildingDepartment" class="form-label">Department</label>
+                    <input type="text" class="form-control" id="BuildingDepartment" name="BuildingDepartment" [(ngModel)]="buildingDetails.BuildingDepartment" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary m-2"> Save </button>
+                <button type="button" class="btn btn-danger" (click)="deleteBuilding(buildingDetails.BuildingId)"> Delete </button>
+            </form>
+
+        </div>
+    </div>
+
+    
+
+
+</div>

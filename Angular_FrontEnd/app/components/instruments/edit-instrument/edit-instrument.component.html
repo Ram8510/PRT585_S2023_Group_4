@@ -1,0 +1,30 @@
+<div class="container" my-5>
+    <h1 class="mb-3"> Edit Instruments</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateInstrument()" >
+                <div class="mb-3">
+                    <label for="InstrumentId" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="InstrumentId" name="InstrumentId" readonly [(ngModel)] = "instrumentDetails.InstrumentId" >
+                  </div>
+                <div class="mb-3">
+                  <label for="InstrumentName" class="form-label">Instrument Name</label>
+                  <input type="text" class="form-control" id="InstrumentName" name="InstrumentName" [(ngModel)] = "instrumentDetails.InstrumentName" >
+                </div>
+                <div class="mb-3">
+                    <label for="InstrumentStatus" class="form-label">Instrument Author</label>
+                    <input type="text" class="form-control" id="InstrumentStatus" name="InstrumentStatus" [(ngModel)]="instrumentDetails.InstrumentStatus" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary m-2"> Save </button>
+                <button type="button" class="btn btn-danger" (click)="deleteInstrument(instrumentDetails.InstrumentId)"> Delete </button>
+            </form>
+
+        </div>
+    </div>
+
+    
+
+
+</div>

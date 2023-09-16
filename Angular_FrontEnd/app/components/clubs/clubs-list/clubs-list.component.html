@@ -1,0 +1,25 @@
+<div class="container my-5">
+    <h1 class="mb-3">Clubs</h1>
+
+    <table class="table" *ngIf="clubs && clubs.length >0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Clubs</th>
+                <th>Location</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let club of clubs">
+                <td>{{ club.ClubId }}</td>
+                <td>{{ club.ClubName }}</td>
+                <td>{{ club.ClubLocation }}</td>
+                <td><a [routerLink]="['/clubs', 'edit', club.ClubId]">View</a></td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    <p *ngIf="!clubs || clubs.length <= 0">No Clubs were found</p>
+</div>

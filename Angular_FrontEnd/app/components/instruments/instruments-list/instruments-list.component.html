@@ -1,0 +1,26 @@
+<div class="container my-5">
+    <h1 class="mb-3">Instruments</h1>
+
+    <table class="table" *ngIf="instruments && instruments.length >0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Instrument</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let instrument of instruments">
+                <td>{{ instrument.InstrumentId }}</td>
+                <td>{{ instrument.InstrumentName }}</td>
+                <td>{{ instrument.InstrumentStatus }}</td>
+                <td><a [routerLink]="['/instruments', 'edit', instrument.InstrumentId]">View</a></td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    <p *ngIf="!instruments || instruments.length <= 0">No Instruments were found</p>
+</div>
+

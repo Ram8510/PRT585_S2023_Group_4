@@ -1,0 +1,25 @@
+<div class="container my-5">
+    <h1 class="mb-3">Songs</h1>
+
+    <table class="table" *ngIf="songs && songs.length >0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Song Name</th>
+                <th>Song's Author</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let song of songs">
+                <td>{{ song.SongId }}</td>
+                <td>{{ song.SongName }}</td>
+                <td>{{ song.SongAuthor }}</td>
+                <td><a [routerLink]="['/songs', 'edit', song.SongId]">View</a></td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    <p *ngIf="!songs || songs.length <= 0">No Songs were found</p>
+</div>

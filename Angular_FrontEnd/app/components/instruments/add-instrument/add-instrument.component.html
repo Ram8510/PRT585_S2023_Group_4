@@ -1,0 +1,25 @@
+<div class="container" my-5>
+    <h1 class="mb-3"> Add New Instrument</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm"  (ngSubmit)="addInstrument()">
+                <div class="mb-3">
+                  <label for="InstrumentName" class="form-label">Instrumet</label>
+                  <input type="text" class="form-control" id="InstrumentName" name="InstrumentName" [(ngModel)] = "addInstrumentRequest.InstrumentName" >
+                </div>
+                <div class="mb-3">
+                    <label for="InstrumentStatus" class="form-label">Status</label>
+                    <input type="text" class="form-control" id="InstrumentStatus" name="InstrumentStatus" [(ngModel)]="addInstrumentRequest.InstrumentStatus" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary"> Save </button>
+            </form>
+
+        </div>
+    </div>
+
+    
+
+
+</div>

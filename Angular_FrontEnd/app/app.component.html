@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Institution Management System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Music Class
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" aria-current="page" routerLink="songs">Songs</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="songs/add">Add Song</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="instruments">Instruments</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="instruments/add">Add Instruments</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Teaching Department
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" aria-current="page" routerLink="professors">Professors</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="professors/add">Add Professors</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="buildings">Buildings</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="buildings/add">Add Buildings</a></li>
+  
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Library
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" aria-current="page" routerLink="books">Books</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="books/add">Add Books</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="borrows">Borrowers</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="borrows/add">Add Borrowers</a></li>
+          
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Social
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" aria-current="page" routerLink="clubs">Clubs</a></li>
+            <li><a class="dropdown-item" aria-current="page" routerLink="clubs/add">Add Clubs</a></li>
+          
+          </ul>
+        </li>
+        
+    
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
