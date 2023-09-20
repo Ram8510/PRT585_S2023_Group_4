@@ -1,12 +1,22 @@
-<div class="container" my-5>
-    <h1 class="mb-3"> Add New Building</h1>
+<div class="container my-5">
+    <h1 class="mb-3">Add New Building</h1>
 
     <div class="row">
         <div class="col-6">
-            <form #form="ngForm"  (ngSubmit)="addBuilding()">
+            <form #form="ngForm" (ngSubmit)="addBuilding()">
                 <div class="mb-3">
-                  <label for="BuildingName" class="form-label">Building</label>
-                  <input type="text" class="form-control" id="BuildingName" name="BuildingName" [(ngModel)] = "addBuildingRequest.BuildingName" >
+                    <label for="BuildingName" class="form-label">Select Building Name</label>
+                    <select class="form-select" id="BuildingName" name="BuildingName"
+                        [(ngModel)]="addBuildingRequest.BuildingName">
+                        <option value="Red 1">Red 1</option>
+                        <option value="Blue 1">Blue 1</option>
+                        <option value="Purple 1">Purple 1</option>
+                        <option value="Yellow 1">Yellow 1</option>
+                        <option value="Red 2">Red 2</option>
+                        <option value="Blue 2">Blue 2</option>
+                        <option value="Purple 2">Purple 2</option>
+                        <option value="Yellow 2">Yellow 2</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="BuildingStatus" class="form-label">Department</label>
